@@ -1,0 +1,39 @@
+# Folders:
+.DS_Store/
+.build/
+.c9/
+.idea/
+.nyc_output/
+.serverless/
+.settings/
+.vs/
+.vscode/
+bin/
+cache/
+coverage/
+dist/
+log/
+logs/
+node_modules/
+obj/
+storage/
+
+# Files:
+*.csproj.user
+*.dat
+*.launch
+*.log
+*.sublime-workspace
+*.xml
+*~
+.DS_Store
+.classpath
+.env*
+.project
+lerna-debug.log*
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Project-specific:

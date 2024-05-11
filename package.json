@@ -1,0 +1,33 @@
+{
+	"author": "Agustín Golmar",
+	"description": "A hand-crafted recursive descent recognizer in TypeScript.",
+	"dependencies": {
+		"reflect-metadata": "^0.2.2",
+		"typedi": "^0.10.0"
+	},
+	"devDependencies": {
+		"@types/node": "^20.12.11",
+		"prettier": "^3.2.5",
+		"rimraf": "^5.0.6",
+		"ts-node": "^10.9.2",
+		"ts-patch": "^3.1.2",
+		"typescript": "^5.4.5"
+	},
+	"engines": {
+		"node": "^20.13.0",
+		"npm": "^10.5.2"
+	},
+	"license": "SEE LICENSE IN LICENSE.md",
+	"name": "@agustin-golmar/recursive-descent-recognizer",
+	"private": true,
+	"repository": "https://github.com/agustin-golmar/Recursive-Descent-Recognizer",
+	"resolutions": {},
+	"scripts": {
+		"build": "rimraf .build && npx tsc",
+		"lint:fix": "prettier --list-different --write \"src/**/*.ts\"",
+		"prepare": "ts-patch install",
+		"start:bash": "src/main/bash/start.sh",
+		"start:batch": "src\\main\\batch\\start.bat"
+	},
+	"version": "0.1.0"
+}

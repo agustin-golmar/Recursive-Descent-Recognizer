@@ -1,0 +1,14 @@
+# @see https://prettier.io/docs/en/options.html
+arrowParens: avoid
+bracketSpacing: true
+endOfLine: lf
+insertPragma: false
+printWidth: 120
+quoteProps: as-needed
+rangeStart: 0
+requirePragma: false
+semi: false
+singleQuote: false
+tabWidth: 4
+trailingComma: none
+useTabs: true
