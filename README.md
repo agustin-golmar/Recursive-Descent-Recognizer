@@ -17,7 +17,7 @@ A hand-crafted recursive descent recognizer in TypeScript.
 
 The application requires the following dependencies:
 
-* [Node.js v20.13.0](https://nodejs.org/en/)
+* [Node.js v22.21.1](https://nodejs.org/en/)
 
 ## CI/CD
 
@@ -36,8 +36,8 @@ After integration is done, change the badges of this `README.md` to point to the
 ## Install
 
 ```bash
-nvm install 20.13.0
-nvm use 20.13.0
+nvm install 22.21.1
+nvm use 22.21.1
 npm install
 ```
 

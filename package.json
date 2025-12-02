@@ -6,16 +6,16 @@
 		"typedi": "^0.10.0"
 	},
 	"devDependencies": {
-		"@types/node": "^20.12.11",
-		"prettier": "^3.2.5",
-		"rimraf": "^5.0.6",
+		"@types/node": "^24.10.1",
+		"prettier": "^3.7.3",
+		"rimraf": "^6.1.2",
 		"ts-node": "^10.9.2",
-		"ts-patch": "^3.1.2",
-		"typescript": "^5.4.5"
+		"ts-patch": "^3.3.0",
+		"typescript": "^5.9.3"
 	},
 	"engines": {
-		"node": "^20.13.0",
-		"npm": "^10.5.2"
+		"node": ">=22.21.1 <23.0.0",
+		"npm": ">=10.9.4"
 	},
 	"license": "SEE LICENSE IN LICENSE.md",
 	"name": "@agustin-golmar/recursive-descent-recognizer",
