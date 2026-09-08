@@ -1,6 +1,5 @@
-import "reflect-metadata"
-import Input from "./domain/Input"
-import L1 from "./language/L1"
+import Input from "./domain/Input.js"
+import L1 from "./language/L1.js"
 
 const mainAsync = async (): Promise<void> => {
 	try {

@@ -1,4 +1,4 @@
-import Recognizer from "./Recognizer"
+import Recognizer from "./Recognizer.js"
 
 /**
  * @description

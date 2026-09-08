@@ -1,33 +1,36 @@
 {
-	"author": "Agustín Golmar",
+	"author": "ITBA",
 	"description": "A hand-crafted recursive descent recognizer in TypeScript.",
-	"dependencies": {
-		"reflect-metadata": "^0.2.2",
-		"typedi": "^0.10.0"
-	},
 	"devDependencies": {
-		"@types/node": "^24.10.1",
-		"prettier": "^3.7.3",
-		"rimraf": "^6.1.2",
-		"ts-node": "^10.9.2",
-		"ts-patch": "^3.3.0",
-		"typescript": "^5.9.3"
+		"@types/node": "^26.5.0",
+		"husky": "^9.1.7",
+		"prettier": "^3.9.6",
+		"rimraf": "^6.1.3",
+		"tsx": "^4.23.13",
+		"typescript": "^7.0.2"
 	},
 	"engines": {
-		"node": ">=22.21.1 <23.0.0",
-		"npm": ">=10.9.4"
+		"node": ">=26",
+		"npm": ">=11"
 	},
 	"license": "SEE LICENSE IN LICENSE.md",
-	"name": "@agustin-golmar/recursive-descent-recognizer",
+	"name": "@itba/recursive-descent-recognizer",
 	"private": true,
-	"repository": "https://github.com/agustin-golmar/Recursive-Descent-Recognizer",
-	"resolutions": {},
-	"scripts": {
-		"build": "rimraf .build && npx tsc",
-		"lint:fix": "prettier --list-different --write \"src/**/*.ts\"",
-		"prepare": "ts-patch install",
-		"start:bash": "src/main/bash/start.sh",
-		"start:batch": "src\\main\\batch\\start.bat"
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Alpha-Theta-Gamma-Mu/Recursive-Descent-Recognizer.git"
 	},
+	"scripts": {
+		"build": "rimraf .build .tsbuildinfo && npx tsc",
+		"clean": "rimraf .build .format node_modules .tsbuildinfo",
+		"coverage": "echo There are no coverage analysis at the moment.",
+		"format": "prettier --cache --cache-location .format/prettier --cache-strategy content --list-different --write \"**/*.{json,md,ts,yaml}\"",
+		"lint": "npm pkg fix && npm audit --audit-level=low",
+		"prepare": "husky",
+		"start": "tsx src/main/typescript/EntryPoint.ts",
+		"test": "echo There are no tests at the moment.",
+		"verify": "npm pkg fix && npm audit --audit-level=low && prettier --cache --cache-location .format/prettier --cache-strategy content --check \"**/*.{json,md,ts,yaml}\""
+	},
+	"type": "module",
 	"version": "0.1.0"
 }

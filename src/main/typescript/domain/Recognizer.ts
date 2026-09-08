@@ -1,4 +1,4 @@
-import { Production } from "./Production"
+import { Production } from "./Production.js"
 
 /**
  * @description

@@ -1,33 +1,37 @@
 {
 	"compilerOptions": {
 		"allowJs": false,
-		"baseUrl": ".",
+		"allowSyntheticDefaultImports": true,
+		"declaration": true,
+		"declarationMap": true,
 		"emitDecoratorMetadata": true,
 		"esModuleInterop": true,
 		"experimentalDecorators": true,
 		"forceConsistentCasingInFileNames": true,
+		"incremental": true,
 		"inlineSourceMap": true,
 		"inlineSources": true,
 		"isolatedModules": true,
-		"lib": [
-			"ESNext"
-		],
+		"lib": ["ESNext"],
 		"module": "NodeNext",
 		"moduleResolution": "NodeNext",
+		"noFallthroughCasesInSwitch": true,
 		"noImplicitAny": true,
 		"noImplicitOverride": true,
 		"outDir": ".build",
-		"plugins": [
-		],
+		"plugins": [],
 		"preserveConstEnums": true,
+		"removeComments": false,
 		"resolveJsonModule": true,
 		"rootDir": "./",
+		"skipLibCheck": false,
 		"strict": true,
+		"strictBindCallApply": true,
 		"strictNullChecks": true,
 		"target": "ESNext",
-		"types": [
-			"node",
-			"reflect-metadata"
-		]
-	}
+		"tsBuildInfoFile": ".tsbuildinfo",
+		"types": ["node"]
+	},
+	"exclude": [".build", ".format", ".git", ".vscode", "node_modules"],
+	"include": ["src/main/typescript"]
 }
